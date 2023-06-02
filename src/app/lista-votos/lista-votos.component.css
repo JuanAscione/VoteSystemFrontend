@@ -16,8 +16,8 @@
 }
 
 .block-bar {
-  width: 40px;
-  background-color: #2196f3;
+  width: 400px; /* Ajusta el ancho de la barra según tus necesidades */
+  height: 100px; /* Ajusta la altura de la barra según tus necesidades */
   margin-top: 5px;
 }
 

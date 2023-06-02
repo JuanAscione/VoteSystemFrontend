@@ -8,6 +8,8 @@ import {AppRoutingModule} from "./app-routing.module";
 import {RouterModule} from "@angular/router";
 import {HttpClientModule} from "@angular/common/http";
 import { MatCardModule } from '@angular/material/card';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
+
 
 @NgModule({
   declarations: [
@@ -20,6 +22,8 @@ import { MatCardModule } from '@angular/material/card';
     AppRoutingModule,
     RouterModule,
     MatCardModule,
+    MatProgressBarModule,
+    MatProgressBarModule,
     HttpClientModule// Make sure to import the RouterModule if you haven't already
   ],
   providers: [],
