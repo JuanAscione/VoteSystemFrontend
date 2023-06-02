@@ -44,9 +44,9 @@ export class ListaVotosComponent implements OnInit{
     );
   }
 
-  calcularAltura(votos: number): string {
+  calcularAltura(votos: number): number {
     const altura = votos * 100 / this.totalVotos; // Ajusta el factor de escala según tus necesidades
-    return `${altura}%`;
+    return altura;
   }
 
 }

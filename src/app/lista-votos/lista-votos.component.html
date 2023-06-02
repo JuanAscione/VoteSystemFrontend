@@ -5,8 +5,8 @@
     <div class="chart-container">
       <div class="block" *ngFor="let voto of votos">
         <div class="block-label">{{ voto.opcion }}</div>
-        <mat-progress-bar class="block-bar" mode="determinate" [value]="voto.cantidad"></mat-progress-bar>
         <div class="block-value">{{ voto.cantidad }}</div>
+        <mat-progress-bar class="block-bar" mode="determinate" [value]="calcularAltura(voto.cantidad)"></mat-progress-bar>
       </div>
     </div>
   </mat-card-content>
