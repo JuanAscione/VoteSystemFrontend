@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 import {AppRoutingModule} from "./app-routing.module";
 import {RouterModule} from "@angular/router";
 import {HttpClientModule} from "@angular/common/http";
+import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import {HttpClientModule} from "@angular/common/http";
     BrowserModule,
     AppRoutingModule,
     RouterModule,
+    MatCardModule,
     HttpClientModule// Make sure to import the RouterModule if you haven't already
   ],
   providers: [],

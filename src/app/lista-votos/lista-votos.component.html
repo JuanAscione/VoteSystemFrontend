@@ -1,8 +1,15 @@
-<p>Lista de votos</p>
+<h2>Lista de Votos</h2>
 
-<ul>
-  <li *ngFor="let voto of votos">
-    {{ voto }}
-  </li>
-</ul>
+<mat-card>
+  <mat-card-content>
+    <div class="chart-container">
+      <div class="block" *ngFor="let voto of votos">
+        <div class="block-label">{{ voto.opcion }}</div>
+        <div class="block-bar" [style.height.%]="calcularAltura(voto.cantidad)"></div>
+        <div class="block-value">{{ voto.cantidad }}</div>
+      </div>
+    </div>
+  </mat-card-content>
+</mat-card>
+
 
