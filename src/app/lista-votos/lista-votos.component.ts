@@ -14,6 +14,7 @@ export interface Voto {
 export class ListaVotosComponent implements OnInit{
 
   votos!: Voto[];
+  totalVotos : number = 0;
 
   constructor(private votosService: VotosService) { }
 
@@ -21,9 +22,15 @@ export class ListaVotosComponent implements OnInit{
     this.getVotos();
 
     setInterval(() => {
+      this.totalVotos = 0;
       this.getVotos();
+      for (let i = 0; i < this.votos.length; i++) {
+        this.totalVotos = this.totalVotos + this.votos[i].cantidad;
+      }
+      console.log(this.totalVotos);
     }, 5000); // Actualiza cada 5 segundos (ajusta según tus necesidades)
   }
+
 
   getVotos() {
     this.votosService.getVotos().subscribe(
@@ -38,7 +45,7 @@ export class ListaVotosComponent implements OnInit{
   }
 
   calcularAltura(votos: number): string {
-    const altura = votos * 10; // Ajusta el factor de escala según tus necesidades
+    const altura = votos * 100 / this.totalVotos; // Ajusta el factor de escala según tus necesidades
     return `${altura}%`;
   }
 
