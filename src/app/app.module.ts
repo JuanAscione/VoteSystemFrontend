@@ -6,6 +6,7 @@ import { ListaVotosComponent } from './lista-votos/lista-votos.component';
 import { HomeComponent } from './home/home.component';
 import {AppRoutingModule} from "./app-routing.module";
 import {RouterModule} from "@angular/router";
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import {RouterModule} from "@angular/router";
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule // Make sure to import the RouterModule if you haven't already
+    RouterModule,
+    HttpClientModule// Make sure to import the RouterModule if you haven't already
   ],
   providers: [],
   bootstrap: [AppComponent]
