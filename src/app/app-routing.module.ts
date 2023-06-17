@@ -7,7 +7,6 @@ import {LoginComponent} from "./login/login.component";
 import {VotingComponent} from "./voting/voting.component";
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
   { path: 'votes', component: ListaVotosComponent },
   { path: 'voting', component: VotingComponent },
   { path: 'login', component: LoginComponent },
