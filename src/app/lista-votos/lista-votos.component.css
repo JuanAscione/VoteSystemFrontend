@@ -1,5 +1,4 @@
 
-
 .block {
   display: flex;
   flex-direction: row;
@@ -27,3 +26,22 @@
   margin-right: 10px;
 
 }
+
+.voting-container {
+  background: linear-gradient(135deg, #4b8bbe, #6dc0e8);
+  height: 100vh;
+  padding: 2rem;
+}
+
+.voting-header {
+  background-color: #223344;
+  padding: 2rem;
+  text-align: center;
+}
+
+.voting-heading {
+  color: #ffffff;
+  font-size: 2.5rem;
+  margin: 0;
+}
+

@@ -1,0 +1,66 @@
+.voting-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #4b8bbe, #6dc0e8);
+  height: 100vh;
+  padding: 2rem;
+}
+
+.candidate-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  background-color: #ffffff;
+  padding: 1rem;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  margin: 0 10rem;
+}
+
+.candidate-card:hover {
+  transform: translateY(-5px);
+}
+
+.candidate-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.candidate-name {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #333333;
+}
+
+.candidate-details {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.candidate-card:hover .candidate-details {
+  max-height: 100px; /* Adjust the height based on your content */
+  transition: max-height 0.3s ease;
+}
+
+.voting-header {
+  background-color: #223344;
+  padding: 2rem;
+  text-align: center;
+}
+
+.voting-heading {
+  color: #ffffff;
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+
+

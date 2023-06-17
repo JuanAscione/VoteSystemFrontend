@@ -1,0 +1,41 @@
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  background: linear-gradient(135deg, #4b8bbe, #6dc0e8);
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+}
+
+button {
+  margin-top: 20px;
+}
+
+.page-container {
+  background: linear-gradient(135deg, #4b8bbe, #6dc0e8);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 2rem;
+  width: 300px;
+}
+
+.mat-form-field {
+  margin-bottom: 1rem;
+}
+
+

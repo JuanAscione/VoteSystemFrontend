@@ -1,0 +1,15 @@
+<div class="page-container">
+  <mat-card class="login-card">
+    <h1>Iniciar Sesión</h1>
+    <form (ngSubmit)="onSubmit()" class="login-form">
+      <mat-form-field>
+        <input matInput type="text" id="username" name="username" placeholder="Cédula" required>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput type="password" id="password" name="password" placeholder="Contraseña" required>
+      </mat-form-field>
+      <button mat-raised-button color="primary">Votar</button>
+    </form>
+    <button mat-raised-button color="accent" (click)="redirectToAdminPage()">Resultados</button>
+  </mat-card>
+</div>

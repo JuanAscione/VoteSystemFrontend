@@ -9,13 +9,22 @@ import {RouterModule} from "@angular/router";
 import {HttpClientModule} from "@angular/common/http";
 import { MatCardModule } from '@angular/material/card';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatButtonModule } from '@angular/material/button';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { LoginComponent } from './login/login.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { VotingComponent } from './voting/voting.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     ListaVotosComponent,
-    HomeComponent
+    HomeComponent,
+    LoginComponent,
+    VotingComponent
   ],
   imports: [
     BrowserModule,
@@ -24,7 +33,13 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
     MatCardModule,
     MatProgressBarModule,
     MatProgressBarModule,
-    HttpClientModule// Make sure to import the RouterModule if you haven't already
+    HttpClientModule,
+    MatInputModule,
+    MatFormFieldModule,
+    MatButtonModule,
+    FormsModule,
+    ReactiveFormsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

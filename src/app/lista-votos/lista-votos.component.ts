@@ -67,6 +67,7 @@ export class ListaVotosComponent implements OnInit{
 
     if (this.chart) {
       this.chart.destroy();
+      this.datasets = [];
     }
 
     for (let i = 0; i < votosAMostrar.length; i++) {
