@@ -1,0 +1,21 @@
+.custom-dialog-title {
+  background-color: #223344;
+  color: #ffffff;
+}
+
+.custom-dialog-content {
+  color: #333333;
+}
+
+.custom-dialog-actions {
+  justify-content: flex-end;
+}
+
+.custom-dialog-actions button {
+  margin-left: 8px;
+}
+
+.vote-button {
+  background-color: #223344;
+  color: #ffffff;
+}

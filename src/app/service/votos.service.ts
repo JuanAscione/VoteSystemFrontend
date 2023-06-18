@@ -14,4 +14,13 @@ export class VotosService {
     return this.http.get<any>(this.apiUrl);
   }
 
+  postVote(idCandidate: string, name: string): Observable<any> {
+    return this.http.post(this.apiUrl,
+      {
+        "nombre": name,
+        "opcion": idCandidate
+      }
+    );
+  }
+
 }

@@ -13,9 +13,12 @@ import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatButtonModule } from '@angular/material/button';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { LoginComponent } from './login/login.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { VotingComponent } from './voting/voting.component';
+import { ConfirmationDialogComponent } from './confirmation-dialog/confirmation-dialog.component';
 
 
 @NgModule({
@@ -24,7 +27,8 @@ import { VotingComponent } from './voting/voting.component';
     ListaVotosComponent,
     HomeComponent,
     LoginComponent,
-    VotingComponent
+    VotingComponent,
+    ConfirmationDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -37,6 +41,8 @@ import { VotingComponent } from './voting/voting.component';
     MatInputModule,
     MatFormFieldModule,
     MatButtonModule,
+    MatDialogModule,
+    MatSnackBarModule,
     FormsModule,
     ReactiveFormsModule,
     BrowserAnimationsModule

@@ -3,7 +3,7 @@
 </header>
 
 <div class="voting-container">
-  <div class="candidate-card">
+  <div class="candidate-card" (click)="voteCandidate('Pepe Perez','Juan')">
     <img src="assets/images/candidate1.jpg" alt="Candidate 1" class="candidate-image">
     <h2 class="candidate-name">Pepe Perez</h2>
     <div class="candidate-details">
@@ -12,7 +12,7 @@
     </div>
   </div>
 
-  <div class="candidate-card">
+  <div class="candidate-card" (click)="voteCandidate('Luis González','Juan')">
     <img src="assets/images/candidate2.jpg" alt="Candidate 2" class="candidate-image">
     <h2 class="candidate-name">Luis González</h2>
     <div class="candidate-details">
@@ -21,7 +21,7 @@
     </div>
   </div>
 
-  <div class="candidate-card">
+  <div class="candidate-card" (click)="voteCandidate('Pedro Lopez','Juan')">
     <img src="assets/images/candidate3.jpg" alt="Candidate 3" class="candidate-image">
     <h2 class="candidate-name">Pedro Lopez</h2>
     <div class="candidate-details">

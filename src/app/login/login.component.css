@@ -38,4 +38,6 @@ button {
   margin-bottom: 1rem;
 }
 
+.mat-mdc-raised-button.color-button { background-color: #4b8bbe; }
+
 
